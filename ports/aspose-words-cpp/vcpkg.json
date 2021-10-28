@@ -1,0 +1,20 @@
+{
+  "name": "aspose-words-cpp",
+  "version": "21.10",
+  "port-version": 0,
+  "description": [
+    "Aspose.Words for C++ is an advanced Word Document Processing API to perform a wide range of processing tasks.",
+    "API provides document formatting, manipulation, mail merge, watermarking and much more capabilities directly within your own C++ applications",
+    "without requiring Microsoft Word. API supports most of the Microsoft Word formats,",
+    "and can render the document pages to a number of image formats."
+  ],
+  "dependencies": [
+    {
+      "name": "codeporting-native-cs2cpp-api",
+      "version>=": "21.10"
+    }
+  ],
+  "homepage": "https://products.aspose.com/words/cpp",
+  "documentation" : "https://docs.aspose.com/words/cpp",
+  "supports": "(osx & x64 & !static) | (windows & !(arm | arm64 | uwp) & !static) | (linux & x64 & !static)"
+}

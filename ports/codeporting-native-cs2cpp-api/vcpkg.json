@@ -1,0 +1,13 @@
+{
+  "name": "codeporting-native-cs2cpp-api",
+  "version": "21.10",
+  "port-version": 0,
+  "description": [
+    "CodePorting.Native Cs2Cpp is a framework to automatically port code from C# to C++",
+    "Ported code can be compiled using Visual Studio, GCC or Clang and can run on Windows and Linux.",
+    "This package features an API used to emulate .Net calls from ported code."
+  ],
+  "homepage": "https://products.codeporting.com/native/cs2cpp",
+  "documentation" : "https://docs.codeporting.com",
+  "supports": "(osx & x64 & !static) | (windows & !(arm | arm64 | uwp) & !static) | (linux & x64 & !static)"
+}
