@@ -1,6 +1,6 @@
 {
   "default": {
-    "codeporting-native-cs2cpp-api": { "baseline": "21.11", "port-version": 0 },
-    "aspose-words-cpp": { "baseline": "21.11", "port-version": 0 }
+    "codeporting-native-cs2cpp-api": { "baseline": "21.11", "port-version": 1 },
+    "aspose-words-cpp": { "baseline": "21.11", "port-version": 2 }
   }
 }
