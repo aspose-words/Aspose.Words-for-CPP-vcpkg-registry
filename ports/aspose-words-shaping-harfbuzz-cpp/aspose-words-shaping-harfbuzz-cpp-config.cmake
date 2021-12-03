@@ -20,7 +20,7 @@ endif()
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget Aspose::Words)
+foreach(_expectedTarget Aspose::WordsShapingHarfBuzz)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -56,21 +56,21 @@ elseif (VCPKG_TARGET_TRIPLET STREQUAL "x64-linux")
 endif()
 
 set(_IMPORT_PREFIX "${_VCPKG_INSTALLED_DIR}/${VCPKG_TARGET_TRIPLET}")
-set(_IMPORTED_IMPLIB_RELEASE "${_IMPORT_PREFIX}/lib/${CMAKE_IMPORT_LIBRARY_PREFIX}Aspose.Words.Cpp${_SUFFIX}${CMAKE_IMPORT_LIBRARY_SUFFIX}")
-set(_IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/bin/${CMAKE_SHARED_LIBRARY_PREFIX}Aspose.Words.Cpp${_SUFFIX}${CMAKE_SHARED_LIBRARY_SUFFIX}")
-set(_IMPORTED_SONAME "${CMAKE_SHARED_LIBRARY_PREFIX}Aspose.Words.Cpp${_SUFFIX}${CMAKE_SHARED_LIBRARY_SUFFIX}") 
-set(_IMPORTED_IMPLIB_DEBUG "${_IMPORT_PREFIX}/debug/lib/${CMAKE_IMPORT_LIBRARY_PREFIX}Aspose.Words.Cpp${_SUFFIX}d${CMAKE_IMPORT_LIBRARY_SUFFIX}")
-set(_IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/debug/bin/${CMAKE_SHARED_LIBRARY_PREFIX}Aspose.Words.Cpp${_SUFFIX}d${CMAKE_SHARED_LIBRARY_SUFFIX}")
+set(_IMPORTED_IMPLIB_RELEASE "${_IMPORT_PREFIX}/lib/${CMAKE_IMPORT_LIBRARY_PREFIX}Aspose.Words.Shaping.HarfBuzz.Cpp${_SUFFIX}${CMAKE_IMPORT_LIBRARY_SUFFIX}")
+set(_IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/bin/${CMAKE_SHARED_LIBRARY_PREFIX}Aspose.Words.Shaping.HarfBuzz.Cpp${_SUFFIX}${CMAKE_SHARED_LIBRARY_SUFFIX}")
+set(_IMPORTED_SONAME "${CMAKE_SHARED_LIBRARY_PREFIX}Aspose.Words.Shaping.HarfBuzz.Cpp${_SUFFIX}${CMAKE_SHARED_LIBRARY_SUFFIX}") 
+set(_IMPORTED_IMPLIB_DEBUG "${_IMPORT_PREFIX}/debug/lib/${CMAKE_IMPORT_LIBRARY_PREFIX}Aspose.Words.Shaping.HarfBuzz.Cpp${_SUFFIX}d${CMAKE_IMPORT_LIBRARY_SUFFIX}")
+set(_IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/debug/bin/${CMAKE_SHARED_LIBRARY_PREFIX}Aspose.Words.Shaping.HarfBuzz.Cpp${_SUFFIX}d${CMAKE_SHARED_LIBRARY_SUFFIX}")
 
-add_library(Aspose::Words SHARED IMPORTED)
-set_target_properties(Aspose::Words PROPERTIES
+add_library(Aspose::WordsShapingHarfBuzz SHARED IMPORTED)
+set_target_properties(Aspose::WordsShapingHarfBuzz PROPERTIES
     INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-    INTERFACE_LINK_LIBRARIES "Aspose::CodePorting.Native.Cs2Cpp"
+    INTERFACE_LINK_LIBRARIES "Aspose::Words"
 )
 
 
 if (VCPKG_TARGET_TRIPLET STREQUAL "x64-windows" OR VCPKG_TARGET_TRIPLET STREQUAL "x86-windows")
-  set_target_properties(Aspose::Words PROPERTIES
+  set_target_properties(Aspose::WordsShapingHarfBuzz PROPERTIES
     IMPORTED_CONFIGURATIONS "DEBUG;RELEASE"
     IMPORTED_IMPLIB_RELEASE "${_IMPORTED_IMPLIB_RELEASE}"
     IMPORTED_LOCATION_RELEASE "${_IMPORTED_LOCATION_RELEASE}"
@@ -78,12 +78,12 @@ if (VCPKG_TARGET_TRIPLET STREQUAL "x64-windows" OR VCPKG_TARGET_TRIPLET STREQUAL
     IMPORTED_LOCATION_DEBUG "${_IMPORTED_LOCATION_DEBUG}"
   )
 elseif(VCPKG_TARGET_TRIPLET STREQUAL "x64-osx")
-  set_target_properties(Aspose::Words PROPERTIES
+  set_target_properties(Aspose::WordsShapingHarfBuzz PROPERTIES
     IMPORTED_LOCATION "${_IMPORTED_LOCATION_RELEASE}"
     IMPORTED_SONAME "@rpath/${_IMPORTED_SONAME}"
   )
 else()
-  set_target_properties(Aspose::Words PROPERTIES
+  set_target_properties(Aspose::WordsShapingHarfBuzz PROPERTIES
     IMPORTED_LOCATION "${_IMPORTED_LOCATION_RELEASE}"
     IMPORTED_SONAME "${_IMPORTED_SONAME}"
   )
