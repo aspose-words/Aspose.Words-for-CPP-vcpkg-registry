@@ -1,6 +1,6 @@
 {
   "name": "codeporting-native-cs2cpp-api",
-  "version": "21.12",
+  "version": "22.1",
   "port-version": 0,
   "description": [
     "CodePorting.Native Cs2Cpp is a framework to automatically port code from C# to C++",

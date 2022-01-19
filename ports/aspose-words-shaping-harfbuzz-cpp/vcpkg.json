@@ -1,6 +1,6 @@
 {
   "name": "aspose-words-shaping-harfbuzz-cpp",
-  "version": "21.12",
+  "version": "22.1",
   "port-version": 0,
   "description": [
     "Aspose.Words.Shaping.HarfBuzz.Cpp provides the support for the OpenType features in the Aspose.Words using HarfBuzz shaping engine.",
@@ -9,7 +9,7 @@
   "dependencies": [
     {
       "name": "aspose-words-cpp",
-      "version>=": "21.12"
+      "version>=": "22.1"
     }
   ],
   "homepage": "https://products.aspose.com/words/cpp",
