@@ -1,6 +1,6 @@
 {
   "name": "aspose-words-cpp",
-  "version": "22.2",
+  "version": "22.3",
   "port-version": 0,
   "description": [
     "Aspose.Words for C++ is an advanced Word Document Processing API to perform a wide range of processing tasks.",
@@ -11,7 +11,7 @@
   "dependencies": [
     {
       "name": "codeporting-native-cs2cpp-api",
-      "version>=": "22.2"
+      "version>=": "22.3"
     }
   ],
   "homepage": "https://products.aspose.com/words/cpp",
