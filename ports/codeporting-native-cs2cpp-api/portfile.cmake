@@ -1,6 +1,6 @@
-set(CODEPORTING_VERSION 22.3)
-set(CODEPORTING_SHA512 "d0295664e295ac7f9c73553be15443eedf1baf032d0c4ad74db6e8332578c4f0296cb9698d9fdc55bec60898af0c3cd7f1bcbe22ebbddc7839774498f00322d0")
-set(CODEPORTING_DOWNLOAD_URL "https://downloads.codeporting.com/native/cs2cpp/new-releases/codeporting.native-cs2cpp-22.3-api/9470997e33204c9a88e81180215a1f8a")
+set(CODEPORTING_VERSION 22.4)
+set(CODEPORTING_SHA512 "1d9661d374ada1d2d2abd6b6b9f3bc22d053a759ff4efa8d4aa22f706cde32cf292fea0d978e9db59c39f14e33750ceab4270e4498f7ae47984c01b6908cf80b")
+set(CODEPORTING_DOWNLOAD_URL "https://downloads.codeporting.com/native/cs2cpp/new-releases/codeporting.native-cs2cpp-22.4-api/fb27349dbf204edab1029a6aecb496d2")
 
 vcpkg_download_distfile(ARCHIVE 
   URLS "${CODEPORTING_DOWNLOAD_URL}"
