@@ -1,7 +1,7 @@
 {
   "default": {
-    "codeporting-native-cs2cpp-api": { "baseline": "22.4", "port-version": 0 },
-    "aspose-words-cpp": { "baseline": "22.4", "port-version": 0 },
-    "aspose-words-shaping-harfbuzz-cpp": { "baseline": "22.4", "port-version": 0 }
+    "codeporting-native-cs2cpp-api": { "baseline": "22.5", "port-version": 0 },
+    "aspose-words-cpp": { "baseline": "22.5", "port-version": 0 },
+    "aspose-words-shaping-harfbuzz-cpp": { "baseline": "22.5", "port-version": 0 }
   }
 }
