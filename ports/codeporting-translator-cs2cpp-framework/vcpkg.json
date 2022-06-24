@@ -1,0 +1,13 @@
+{
+  "name": "codeporting-translator-cs2cpp-framework",
+  "version": "22.6",
+  "port-version": 0,
+  "description": [
+    "CodePorting.Translator.Cs2Cpp.Framework is a framework to automatically port code from C# to C++",
+    "Ported code can be compiled using Visual Studio, GCC or Clang and can run on Windows and Linux.",
+    "This package features an API used to emulate .Net calls from ported code."
+  ],
+  "homepage": "https://products.codeporting.com/native/cs2cpp",
+  "documentation" : "https://docs.codeporting.com",
+  "supports": "(osx & x64 & !static) | (windows & !(arm | arm64 | uwp) & !static) | (linux & x64 & !static)"
+}

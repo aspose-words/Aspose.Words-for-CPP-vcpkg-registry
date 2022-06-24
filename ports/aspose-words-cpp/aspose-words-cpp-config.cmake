@@ -65,7 +65,7 @@ set(_IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/debug/bin/${CMAKE_SHARED_LIBRARY
 add_library(Aspose::Words SHARED IMPORTED)
 set_target_properties(Aspose::Words PROPERTIES
     INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-    INTERFACE_LINK_LIBRARIES "Aspose::CodePorting.Native.Cs2Cpp"
+    INTERFACE_LINK_LIBRARIES "Aspose::CodePorting.Translator.Cs2Cpp.Framework"
 )
 
 
